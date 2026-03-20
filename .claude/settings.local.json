@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(node -e \"require\\(''./backend/src/config''\\); console.log\\(''Config OK''\\)\")",
+      "Bash(node -e \":*)",
+      "Bash(timeout 8 node backend/src/server.js)",
+      "Bash(mongosh --eval \"db.version\\(\\)\")",
+      "Bash(mongod --version)",
+      "Bash(systemctl status:*)",
+      "Bash(docker compose:*)",
+      "Bash(snap list:*)",
+      "Bash(flatpak list:*)"
+    ]
+  }
+}
