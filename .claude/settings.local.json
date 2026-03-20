@@ -21,7 +21,8 @@
       "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H 'Content-Type: application/json' -d '{\"\"email\"\":\"\"admin@conediu.ro\"\",\"\"password\"\":\"\"Admin123\\\\u0021\"\"}')",
       "Bash(curl -s http://192.168.50.12:3000/api/health)",
       "Bash(node src/server.js)",
-      "Bash(pkill -f \"node src/server\")"
+      "Bash(pkill -f \"node src/server\")",
+      "Bash(find node_modules/@nebular/theme -name *.scss -path */themes/*)"
     ]
   }
 }
