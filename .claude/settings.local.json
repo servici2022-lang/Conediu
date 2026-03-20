@@ -10,7 +10,18 @@
       "Bash(systemctl status:*)",
       "Bash(docker compose:*)",
       "Bash(snap list:*)",
-      "Bash(flatpak list:*)"
+      "Bash(flatpak list:*)",
+      "Bash(npx ng:*)",
+      "Bash(curl -s http://localhost:3000/api/health)",
+      "Bash(nc -z localhost 27017)",
+      "Bash(npm run:*)",
+      "Bash(nc -zv -w5 192.168.50.199 27017)",
+      "Bash(ping -c 2 -W 2 192.168.50.199)",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H \"Content-Type: application/json\" -d '{\"\"email\"\":\"\"admin@conediu.ro\"\",\"\"password\"\":\"\"Admin123!\"\"}')",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H 'Content-Type: application/json' -d '{\"\"email\"\":\"\"admin@conediu.ro\"\",\"\"password\"\":\"\"Admin123\\\\u0021\"\"}')",
+      "Bash(curl -s http://192.168.50.12:3000/api/health)",
+      "Bash(node src/server.js)",
+      "Bash(pkill -f \"node src/server\")"
     ]
   }
 }
