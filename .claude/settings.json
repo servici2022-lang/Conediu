@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nc -zv -w5 192.168.50.201 27017)",
+      "Bash(node src/seeds/seed.js)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4200)",
+      "Bash(node -e \":*)",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H \"Content-Type: application/json\" -d '{\"\"email\"\":\"\"admin@concediu.ro\"\",\"\"password\"\":\"\"Admin123!\"\"}')",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H 'Content-Type: application/json' -d '{\"\"email\"\":\"\"admin@concediu.ro\"\",\"\"password\"\":\"\"Admin123!\"\"}')",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H 'Content-Type: application/json' --data-raw '{\"\"email\"\":\"\"admin@concediu.ro\"\",\"\"password\"\":\"\"Admin123\"\"}')",
+      "Bash(node -e ':*)",
+      "Bash(printf '{\"\"\"\"email\"\"\"\":\"\"\"\"admin@concediu.ro\"\"\"\",\"\"\"\"password\"\"\"\":\"\"\"\"Admin123!\"\"\"\"}')",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H 'Content-Type: application/json' -d @-)",
+      "Read(//home/andrei/Git/Conediu/**)",
+      "Bash(fc-list :lang=ro)",
+      "Bash(fc-list)"
+    ]
+  }
+}
