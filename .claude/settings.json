@@ -22,7 +22,20 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4200/logo.svg)",
       "Bash(curl -s http://localhost:4200/)",
       "Bash(curl -s -I http://localhost:4200/favicon.ico)",
-      "Bash(curl -s -I http://localhost:4200/logo.svg)"
+      "Bash(curl -s -I http://localhost:4200/logo.svg)",
+      "Read(//usr/share/fonts/truetype/dejavu/**)",
+      "Bash(netstat -tnlp)",
+      "Bash(cat src/environments/environment.ts)",
+      "Bash(ls src/environments/)",
+      "Bash(node -e ' *)",
+      "Read(//tmp/**)",
+      "Bash(curl -sS -X POST http://192.168.50.201:3000/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"admin@concediu.ro\",\"password\":\"Admin123!\"}' --max-time 10)",
+      "Bash(curl -sS -i http://192.168.50.201:3000/api/leave-requests/69de09bf479a5b5ed5648eed/export-pdf -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YmQ0NDdkYzQ5NTk0NDZhOGNiYjBkOSIsImlhdCI6MTc3NzkwMDkxNiwiZXhwIjoxNzc3OTA0NTE2fQ.Ba14h4gYJLnWrpcXxOX1S1fhKa1R0PW5lKsAu1-JTec' --max-time 15 -o /tmp/export.pdf)",
+      "Bash(curl -sS -i http://192.168.50.201:3000/api/leave-requests/69de09bf479a5b5ed5648eed/export-pdf -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YmQ0NDdkYzQ5NTk0NDZhOGNiYjBkOSIsImlhdCI6MTc3NzkwMDkxNiwiZXhwIjoxNzc3OTA0NTE2fQ.Ba14h4gYJLnWrpcXxOX1S1fhKa1R0PW5lKsAu1-JTec' --max-time 15)",
+      "Bash(curl -sS -X POST http://localhost:3000/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"admin@concediu.ro\",\"password\":\"Admin123!\"}' --max-time 5)"
+    ],
+    "additionalDirectories": [
+      "/usr/share/fonts/truetype/dejavu"
     ]
   }
 }
